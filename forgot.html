@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="">
+        <title>Three Modern Assessment</title>
+		 <!-- custom css file link  -->
+		 <link rel="stylesheet" text="text/css" href="style.css">
+	   
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <nav class="navbar">
+        <a href="index.html#!/login">Go Back</a>
+    </nav>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+</head>
+
+	<body>
+	
+
+<section class="book" id="book">
+<br>
+<br>
+<br>
+<br><br><h1 class="heading"> <span>RESET</span> PASSWORD</h1>  
+
+ 
+<div class="row">
+	
+	<form name="form" ng-submit="vm.login()" role="form">
+		
+		<div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+		<label for="password">Reset Your Password</label>
+		<input type="password" name="password" id="password" class="box" ng-model="vm.password" required />
+		
+		</div>
+		<div class="form-actions" layout="row">
+		<button type="submit" onclick="myFunction()" class="btn btn-primary">Reset</button>
+        <script>
+            function myFunction() {
+                    // Simulate a mouse click:
+window.location.href = "index.html#!/login";
+                    alert("Your Password has been Updated Successfully!");
+                  }
+              
+            </script>
+		
+		</form>
+				</div>
+		</section>
+</body>
+</html>		
+

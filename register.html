@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="">
+	
+		<!-- font awesome cdn link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+		 <!-- custom css file link  -->
+		 <link rel="stylesheet" text="text/css" href="./style.css">
+	   
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+<nav class="navbar">
+	<a href="#!/register"> Registration</a>
+</nav>
+<nav class="navbar">
+	<a href="#!/">Log In</a>
+</nav>
+
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+</head>
+
+<div class="container">
+<body>
+<section class="book" id="book">
+<br>
+<br>
+<br>
+<br><br><h4 class="heading"> <span>USER</span> REGISTRATION </h4>  
+
+ 
+<div class="row">
+   
+					<form name="form"  ng-submit="vm.register()" role="form">
+                        <div class="row">
+							<div class="col-md-6">
+								<div class="form-group" ng-class="{ 'has-error': form.firstName.$dirty && form.firstName.$error.required }">
+									<label for="firstName">first Name<span class="text-danger">*</span></label>
+                                    <input type="text" name="firstName" id="firstName" class="box" ng-model="vm.user.firstName" required />
+                                    <span ng-show="form.firstName.$dirty && form.firstName.$error.required" class="help-block">first name is required</span>
+                                    </div>
+							</div>						
+
+                                <div class="col-md-6">
+                                    <div class="form-group" ng-class="{ 'has-error': form.lastName.$dirty && form.lastName.$error.required }">
+                                        <label for="lastName">lastName <span class="text-danger">*</span></label>
+                                        <input type="lastName" name="lastName" id="lastName" class="box" ng-model="vm.user.lastName" required />
+                                        <span ng-show="form.lastName.$dirty && form.lastName.$error.required" class="help-block">lastName address is required</span>
+                                        </div>
+                                </div>
+
+                                 <div class="col-md-6">
+                                <div class="form-group" ng-class="{ 'has-error': form.email.$dirty && form.email.$error.required }">
+                                <label for="email">Email address</label>
+                                <input type="text" name="email" id="email" class="box" ng-model="vm.user.email" required />
+                                <span ng-show="form.email.$dirty && form.email.$error.required" class="help-block">Email address is required</span>
+                                </div>
+                            </div>
+>
+
+                                <div class="col-md-6">
+                                <div class="form-group" ng-class="{ 'has-error': form.password.$dirty && form.password.$error.required }">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="box" ng-model="vm.user.password" required />
+                                <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
+                                </div>
+                            </div>
+
+                           
+    <div class="form-actions">
+        <button type="submit"  class="btn btn-primary">Register</button>
+     
+        <a href="#!/" class="btn btn-link">Cancel</a>
+        </div>
+
+					</form>
+					
+    </div>
+
+</section>
+			
+</div>
+</body>
+</html>
